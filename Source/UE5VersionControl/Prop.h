@@ -23,4 +23,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	// The static mesh component for the prop
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* MeshComp;
+
 };
